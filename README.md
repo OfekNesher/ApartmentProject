@@ -10,38 +10,48 @@ The input from the user can be assumed to be correct.
 Possible commands are:
 
 • get-an-apt –MaximumPrice 1500000
+
 All apartments with a maximum cost of 1500000 will be printed
 
 • get-an-apt –MinimumNumRooms 3
+
 All apartments with at least 3 rooms will be printed
 
 • get-an-apt –MaximumNumRooms 5
+
 All apartments with a maximum of 5 rooms will be printed
 
 • get-an-apt –Date 01052017
+
 All apartments vacated by May 1, 2017 will be printed
 
 
 The user can combine several requirements, for example:
 
 • get-an-apt –MinimumNumRooms 3 –MaximumNumRooms 5 –MaximumPrice 1750000
+
 For each of the above commands, the user can add the option –s and get the information sorted from the lowest price to the highest price, or the option –sr and get the information sorted from the highest price to the lowest.
 
 for example,
 • get-an-apt –MaximumNumRooms 5 -sr
+
 All 5-room apartments can be printed on a private screen, sorted from the most expensive to the cheapest.
 
 • add-an-apt "Hasavyonim 23 Ramat Ono" 2000000 4 01 01 20
+
 Adding an apartment to the reservoir on Savyonim Street 23 Ramat Ono, which costs 2 million, the number of rooms in it 4 and the date of entry is 1.1.20.
 The add-in will be in memory only, while at the end of the program all apartments data added following the add-an-apt command will be saved to the file.
 
 • buy-an-apt <number>
+  
 This command will signify the purchase of the apartment whose code is the number and of course result in its removal from the repository.
 
 • get-an-apt –Enter <x>
+  
 The codes of the apartments that entered the repository will be printed in the last <x> days
 
 • delete-an-apt –Enter <x>
+  
 Exited from the pool of apartments that entered it in the last <x> days
 
 The commands will store in two repositories as described below:
