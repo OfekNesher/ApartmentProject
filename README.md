@@ -70,12 +70,15 @@ Option 3 and 4 next to each command will print a digit (from 1 onwards. The comm
 5. Enter! <num> ^ str1 ^ str2 will execute the command with the number num containing str1 sub string and the same sub string will be replaced with str2.
 
 For example, if command # 4 was
+
 • get-an-apt –MinimumNumRooms 3
 
 So the following command:
+
 •! 4 ^ 3 ^ 2
 
 Will actually be the command:
+
 • get-an-apt –MinimumNumRooms 2
 
 
