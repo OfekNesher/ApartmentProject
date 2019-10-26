@@ -5,6 +5,7 @@ As part of an advanced C language programming course we were given a task to wri
 
 # Our Project:
 The program receives and executes commands from the user. The "exit" command will end the program.
+
 The input from the user can be assumed to be correct.
 
 Possible commands are:
