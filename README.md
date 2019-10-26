@@ -55,8 +55,11 @@ The codes of the apartments that entered the repository will be printed in the l
 Exited from the pool of apartments that entered it in the last <x> days
 
 The commands will store in two repositories as described below:
+
       Repository A: A queue to be used by a 7-pointer array containing the 7 most recent commands.
+      
       Repository B: A linked list of the older commands.
+      
 
 The program displays a prompt to the user at each stage and receives a command from it. The command can be a get-an-apt, add-an-apt, buy-an-apt, delete-an-apt or request to restore a repository from the repository (recovery options are described below).
 The program executes the command and then stores the (normal or restored) command in repository A. If repository A is full, the oldest command must be passed from repository A to repository B and update repository A to contain the last 7 commands (including the command that has just been inserted).
