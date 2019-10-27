@@ -34,6 +34,7 @@ The user can combine several requirements, for example:
 For each of the above commands, the user can add the option –s and get the information sorted from the lowest price to the highest price, or the option –sr and get the information sorted from the highest price to the lowest.
 
 for example,
+
 • get-an-apt –MaximumNumRooms 5 -sr
 
 All 5-room apartments can be printed on a private screen, sorted from the most expensive to the cheapest.
